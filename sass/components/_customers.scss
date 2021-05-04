@@ -1,0 +1,84 @@
+.clients_title {
+  color: $primary-titles-color;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 50px;
+
+  @media (min-width: $pc) {
+    font-size: 36px;
+  }
+}
+
+.clients_list {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $pc) {
+    display: flex;
+  }
+}
+
+.clients_item {
+  width: 100%;
+}
+
+.clients_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90px;
+
+  border: 1px solid $icons-gray;
+  border-radius: 4px;
+  fill: $icons-gray;
+
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primary-blue-color;
+    fill: $primary-blue-color;
+  }
+}
+
+.logo-1 {
+  width: 45px;
+  height: 50px;
+}
+
+.logo-2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo-3 {
+  width: 41px;
+  height: 42.6px;
+}
+
+.logo-4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo-5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo-6 {
+  width: 88.5px;
+  height: 45.5px;
+}
